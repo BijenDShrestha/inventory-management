@@ -1,0 +1,38 @@
+@Model Inventory
+<form action="/inventory/Create" method="POST">
+
+                <h3 class="card-title">Create</h3>
+
+              <form>
+
+                <div class="card-body">
+                    <div class="col-md-6 form-group">
+                    < label asp-for="Name">Name</label>
+                    < span asp-validation-for="Name" class="text-danger"></span>
+                          <input  class="form-control" type="text" required>      
+                  </div>
+                    <div class="col-md-6 form-group">
+                    < label asp-for="Supplier"> Supplier</label>
+                    < span asp-validation-for="Supplier" class="text-danger"></span>
+                          <input  class="form-control" type="text" required>      
+                  </div>
+                  <div class="col-md-6 form-group">
+                    < label asp-for="ExpDate"> Expiry Date</label>
+                          <input name="ExpDate" class="form-control" type="date" required>      
+                  </div>
+                  <div class="col-md-6 form-group">
+                    < label asp-for="Price"> Price</label>
+                          <input name = "Price" class="form-control" type="number" required>      
+                  </div>
+                  <div class="col-md-6 form-group">
+                    < label asp-for="Quantity"> Quantity</label>
+                          <input name = "Quantity" class="form-control" type="number" required>      
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
+</form>            
+            <!-- /.card -->

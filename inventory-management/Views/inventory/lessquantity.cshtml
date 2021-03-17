@@ -1,0 +1,42 @@
+@Model List<Inventory>;
+  @{
+    Layout = "_Layout";
+  }
+  @{
+    ViewData["Title"] = "Inventories that are less than 50";
+}
+<h1>List of Inventories</h1>
+    <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Supplier</th>
+      <th scope="col">Expiry Date</th>
+      <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+@foreach (var inventory in Model)
+{
+    if(@inventory.Quantity < 50)
+    {
+           <tbody>
+            <tr>
+            <th scope="row">@inventory.Id</th>
+            <td><a href="/inventory/detail?id=@inventory.Id">
+            @inventory.Name</a></td>
+            <td>@inventory.Supplier</td>
+            <td>@inventory.ExpDate</td>
+            <td>@inventory.Price</td>
+            <td>@inventory.Quantity</td>
+            <td><a href="/inventory/edit?id=@inventory.Id">
+            Edit</a>/<a href="/inventory/delete?id=@inventory.Id">
+            Delete</a></td>
+    </tr>
+  </tbody>
+    }
+
+}
+</table>
