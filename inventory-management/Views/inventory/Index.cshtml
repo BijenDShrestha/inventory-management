@@ -1,4 +1,4 @@
-@Model List<Inventory>;
+@model List<Inventory>;
   @{
     Layout = "_Layout";
   }
@@ -23,8 +23,7 @@
    <tbody>
     <tr>
       <th scope="row">@inventory.Id</th>
-      <td><a href="/inventory/detail?id=@inventory.Id">
-      @inventory.Name</a></td>
+      <td>@inventory.Name</td>
       <td>@inventory.Supplier</td>
       <td>@inventory.ExpDate</td>
       <td>@inventory.Price</td>

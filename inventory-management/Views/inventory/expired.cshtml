@@ -1,13 +1,13 @@
-@Model List<Inventory>;
+@model List<Inventory>;
   @{
     Layout = "_Layout";
   }
   @{
-    ViewData["Title"] = "Inventory List";
+    ViewData["Title"] = "Inventory List (expire)";
 }
 
 
-<h1>List of Inventories</h1>
+<h1>List of Inventories that are going to expire</h1>
     <table class="table table-striped">
   <thead>
     <tr>
@@ -32,8 +32,7 @@ Console.WriteLine(newDate2); // 1/19/2016 11:48:09 AM
         <tbody>
             <tr>
             <th scope="row">@inventory.Id</th>
-            <td><a href="/inventory/detail?id=@inventory.Id">
-            @inventory.Name</a></td>
+            <td>@inventory.Name</td>
             <td>@inventory.Supplier</td>
             <td>@inventory.ExpDate</td>
             <td>@inventory.Price</td>
