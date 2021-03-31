@@ -30,6 +30,14 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Inventory" asp-action="expired">Expiring Items </a>
                         </li>
+                        
+                        <li class="nav-item">
+                            <form asp-controller="Inventory" asp-action="Search">
+                                <input type="text" name="SearchString" placeholder="Search" />
+                                <input type="submit" value="Filter" />
+                        </form> 
+                        </li>
+                       
                     </ul>
                 </div>
             </div>

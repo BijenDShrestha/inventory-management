@@ -16,6 +16,7 @@
       <th scope="col">Price</th>
       <th scope="col">Quantity</th>
       <th scope="col">Action</th>
+      <th scope="col">Sold</th>
     </tr>
   </thead>
 @foreach (var inventory in Model)
@@ -33,6 +34,7 @@
             <td><a href="/inventory/edit?id=@inventory.Id">
             Edit</a>/<a href="/inventory/delete?id=@inventory.Id">
             Delete</a></td>
+            <td><a href="/inventory/sell?id=@inventory.Id">Sell</a></td>            
     </tr>
   </tbody>
     }

@@ -7,6 +7,7 @@
 }
 
 
+
 <h1>List of Inventories that are going to expire</h1>
     <table class="table table-striped">
   <thead>
@@ -18,6 +19,7 @@
       <th scope="col">Price</th>
       <th scope="col">Quantity</th>
       <th scope="col">Action</th>
+      <th scope="col">Sold</th>
     </tr>
   </thead>
 
@@ -40,6 +42,7 @@ Console.WriteLine(newDate2); // 1/19/2016 11:48:09 AM
             <td><a href="/inventory/edit?id=@inventory.Id">
             Edit</a>/<a href="/inventory/delete?id=@inventory.Id">
             Delete</a></td>
+            <td><a href="/inventory/sell?id=@inventory.Id">Sell</a></td>
             </tr>
         </tbody>
     }

@@ -81,3 +81,5 @@ D:\Bijen\Inventory_Management\inventory-management\obj\Debug\netcoreapp3.1\Razor
 D:\Bijen\Inventory_Management\inventory-management\obj\Debug\netcoreapp3.1\Razor\Views\inventory\edit.cshtml.g.cs
 D:\Bijen\Inventory_Management\inventory-management\obj\Debug\netcoreapp3.1\Razor\Views\inventory\lessquantity.cshtml.g.cs
 D:\Bijen\Inventory_Management\inventory-management\obj\Debug\netcoreapp3.1\Razor\Views\inventory\expired.cshtml.g.cs
+D:\Bijen\Inventory_Management\inventory-management\obj\Debug\netcoreapp3.1\Razor\Views\inventory\sell.cshtml.g.cs
+D:\Bijen\Inventory_Management\inventory-management\obj\Debug\netcoreapp3.1\Razor\Views\inventory\search.cshtml.g.cs

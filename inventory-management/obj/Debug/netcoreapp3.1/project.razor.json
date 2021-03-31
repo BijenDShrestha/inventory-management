@@ -14397,6 +14397,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Bijen\\Inventory_Management\\inventory-management\\Views\\inventory\\search.cshtml",
+      "TargetPath": "Views\\inventory\\search.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Bijen\\Inventory_Management\\inventory-management\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -14419,6 +14424,11 @@
     {
       "FilePath": "d:\\Bijen\\Inventory_Management\\inventory-management\\Views\\inventory\\lessquantity.cshtml",
       "TargetPath": "Views\\inventory\\lessquantity.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Bijen\\Inventory_Management\\inventory-management\\Views\\inventory\\sell.cshtml",
+      "TargetPath": "Views\\inventory\\sell.cshtml",
       "FileKind": "mvc"
     },
     {
